@@ -173,6 +173,8 @@ const todos = (state = initialState, action) => {
 
 Link 태그의 onclick event 발생 시, 해당 action을 dispatch 해줌으로써 해결했다.
 
+주의! : working 일때와 Done 일때 Link에 각가 onlick 이벤트를 추가해줘야 한다.
+
 ```
 import {
   deleteTodo,
