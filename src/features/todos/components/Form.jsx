@@ -16,7 +16,7 @@ const Form = () => {
 
   const onChangeHandler = (event) => {
     const { name, value } = event.target;
-    setTodo({ ...todo, id: Date.now(), [name]: value });
+    setTodo({ ...todo, id, [name]: value });
   };
 
   const onSubmitHandler = (event) => {
