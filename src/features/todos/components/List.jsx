@@ -67,7 +67,11 @@ const List = () => {
           if (todo.isDone) {
             return (
               <StTodoContainer key={todo.id}>
-                <StLink to={`/${index}`} key={todo.id}>
+                <StLink
+                  onClick={() => onGetTodoById(todo.id)}
+                  to={`/${index}`}
+                  key={todo.id}
+                >
                   <div>상세보기</div>
                 </StLink>
                 <div>
